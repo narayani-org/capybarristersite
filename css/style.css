@@ -937,3 +937,58 @@ a, button, [role="button"] {
 a:hover, button:hover, [role="button"]:hover {
   cursor: url('/img/paw-hover.svg') 12 12, pointer;
 }
+
+/* Sliding Menu Styles */
+#slideMenu {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 320px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: -2px 0 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+#slideMenu.active {
+    transform: translateX(-320px);
+}
+
+#menuOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(3px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 999;
+}
+
+#menuOverlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menu-item {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.3s ease-in-out;
+}
+
+#slideMenu.active .menu-item {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Staggered animation for menu items */
+#slideMenu.active .menu-item:nth-child(1) { transition-delay: 0.1s; }
+#slideMenu.active .menu-item:nth-child(2) { transition-delay: 0.15s; }
+#slideMenu.active .menu-item:nth-child(3) { transition-delay: 0.2s; }
+#slideMenu.active .menu-item:nth-child(4) { transition-delay: 0.25s; }
+#slideMenu.active .menu-item:nth-child(5) { transition-delay: 0.3s; }
+#slideMenu.active .menu-item:nth-child(6) { transition-delay: 0.35s; }
