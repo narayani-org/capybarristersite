@@ -64,69 +64,51 @@
   <div id="menuOverlay" class="menu-overlay fixed inset-0 bg-black/50 backdrop-blur-sm z-[90]"></div>
 
   <!-- Hero Section -->
-  <header class="hero bg-[#1b3a2d] text-white py-20 lg:py-28">
+  <header class="hero bg-[#1b3a2d] text-white py-12 sm:py-16 md:py-20 lg:py-28">
     <div class="container mx-auto px-4 max-w-7xl">
-      <div class="flex flex-col-reverse lg:flex-row items-center gap-16 lg:gap-24">
-
-        <!-- Left: Text Content -->
-        <div class="flex-1 w-full text-center lg:text-left">
-          <p class="uppercase tracking-wide text-sm text-white/70 mb-2">A Creative Legal Agency</p>
-
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
-            LEGAL SOLUTIONS<br class="hidden sm:block">
-            FOR BIG THINKERS
+      <div class="flex flex-col-reverse lg:flex-row items-center gap-8 lg:gap-24">
+        <div class="flex-1 text-center lg:text-left">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 lg:mb-6">
+            Legal Solutions for<br class="hidden sm:block" />
+            <span class="text-[#FFD500]">Modern Businesses</span>
           </h1>
-
-          <div class="w-20 h-1 bg-yellow-400 my-6 mx-auto lg:mx-0"></div>
-
-          <p class="text-lg text-white/90 max-w-xl mx-auto lg:mx-0 mb-8">
-            We provide accessible and affordable legal service to entrepreneurs, startups and growing companies.
+          <p class="text-lg sm:text-xl text-white/80 mb-8 max-w-2xl mx-auto lg:mx-0">
+            We help startups and businesses navigate legal complexities with innovative solutions and expert guidance.
           </p>
-
-          <!-- CTA Buttons -->
-          <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-            <button
-              class="px-6 py-3 bg-[#3b6f59] text-white font-semibold rounded-full hover:bg-opacity-90 transition-all duration-300 shadow-md hover:shadow-lg">
-              Chat to a lawyer
-            </button>
-            <button
-              class="px-6 py-3 bg-white text-[#1b3a2d] font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-md hover:shadow-lg">
-              Assess my legal risks
-            </button>
-          </div>
-
-          <!-- Logos (Optional) -->
-          <div class="pt-10 text-white/60 text-sm">
-            <p class="uppercase tracking-widest">As seen on</p>
-            <div class="flex justify-center lg:justify-start items-center gap-6 mt-3">
-              <img src="/img/expresso.svg" alt="Expresso" class="h-6">
-              <img src="/img/5fm.svg" alt="5FM" class="h-6">
-            </div>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a href="contact.html" class="inline-flex items-center justify-center gap-2 bg-[#FFD500] text-[#1b3a2d] px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-[#FFD500]/90 transition-all duration-300 hover:shadow-xl hover:scale-105">
+              Get Started
+              <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
+            <a href="services.html" class="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition-all duration-300">
+              Our Services
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
           </div>
         </div>
-
-        <!-- Right: Hero Image -->
         <div class="flex-1 w-full flex justify-center items-center">
-          <div class="hero-image-container max-w-md md:max-w-lg lg:max-w-full w-full">
+          <div class="hero-image-container max-w-[280px] sm:max-w-md md:max-w-lg lg:max-w-full w-full">
             <img src="./img/heroimg.svg" alt="hero image" class="w-full h-auto object-contain float-animation">
           </div>
         </div>
-
       </div>
     </div>
   </header>
 
   <!-- Services Section-->
-  <section class="py-16 bg-white relative">
+  <section class="py-12 sm:py-16 bg-white relative">
     <!-- Section Heading -->
-    <div class="text-center mb-12">
+    <div class="text-center mb-8 sm:mb-12">
       <p class="text-sm uppercase tracking-widest text-earth-500">Capybarrister Covers</p>
-      <h2 class="text-4xl font-extrabold text-[#1b3a2d]">THE FUTURE OF LEGALTECH</h2>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-[#1b3a2d]">THE FUTURE OF LEGALTECH</h2>
     </div>
 
-
     <!-- Swiper Container -->
-    <div class="swiper px-6 cursor-default">
+    <div class="swiper px-4 sm:px-6 cursor-default">
       <div class="swiper-wrapper">
 
         <!-- Slide 1 -->
@@ -527,25 +509,24 @@
 
 
   <!-- Capybarrister Blog Section -->
-  <section class="bg-[#142f26] text-white py-20">
-    <div class="container mx-auto px-6 md:px-12">
-      <div class="grid md:grid-cols-3 gap-10 items-center">
+  <section class="bg-[#142f26] text-white py-12 sm:py-16 md:py-20">
+    <div class="container mx-auto px-4 sm:px-6 md:px-12">
+      <div class="grid md:grid-cols-3 gap-8 md:gap-10 items-center">
         <!-- Left Section -->
-        <div class="md:col-span-1">
-          <h2 class="text-5xl font-extrabold uppercase leading-tight mb-4">
+        <div class="md:col-span-1 text-center md:text-left">
+          <h2 class="text-4xl sm:text-5xl font-extrabold uppercase leading-tight mb-4">
             The Capybarrister <span class="block text-[#FFD500]">Blog</span>
           </h2>
-          <p class="text-earth-300 text-sm mb-6">
+          <p class="text-earth-300 text-sm mb-6 max-w-md mx-auto md:mx-0">
             LegalTech insights. IP know-how. Startup law decoded — fast, visual, and founder-friendly.
           </p>
-          <a href="blog.html"
-            class="inline-block bg-white text-[#142f26] font-semibold py-2 px-5 rounded-full hover:bg-gray-100 transition">
+          <a href="blog.html" class="inline-block bg-white text-[#142f26] font-semibold py-2 px-5 rounded-full hover:bg-gray-100 transition">
             View all
           </a>
         </div>
 
         <!-- Blog Cards -->
-        <div class="md:col-span-2 overflow-x-auto space-x-6 flex scrollbar-hide">
+        <div class="md:col-span-2 overflow-x-auto space-x-4 sm:space-x-6 flex scrollbar-hide pb-4">
           <!-- Blog Post 1 -->
           <div class="min-w-[280px] w-80 bg-white text-[#142f26] rounded-lg shadow-lg">
             <div class="h-48 bg-cover bg-center rounded-t-lg"
