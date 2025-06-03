@@ -1,0 +1,75 @@
+<div id="slideMenu"
+class="slide-menu fixed top-0 right-0 w-80 h-screen bg-white/95 backdrop-blur-md shadow-2xl z-[100] pt-20 px-6">
+<!-- Close Button -->
+<button id="closeMenuBtn"
+  class="absolute top-6 right-6 w-10 h-10 flex items-center justify-center rounded-full bg-[#1b3a2d] text-white hover:bg-primary-forest transition-all duration-300 shadow-md hover:shadow-lg active:scale-95">
+  <i class="fas fa-times text-xl"></i>
+</button>
+<ul class="space-y-4">
+  <li class="menu-item">
+    <a href="about.html" class="menu-link block py-3 px-4 rounded-lg hover:bg-[#1b3a2d] hover:text-white transition-all duration-300 relative overflow-hidden group">
+      <span class="relative z-10">About Us</span>
+      <span class="absolute inset-0 bg-[#1b3a2d]/10 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="case-studies.html" class="menu-link block py-3 px-4 rounded-lg hover:bg-[#1b3a2d] hover:text-white transition-all duration-300 relative overflow-hidden group">
+      <span class="relative z-10">Case Studies</span>
+      <span class="absolute inset-0 bg-[#1b3a2d]/10 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="services.html" class="menu-link block py-3 px-4 rounded-lg hover:bg-[#1b3a2d] hover:text-white transition-all duration-300 relative overflow-hidden group">
+      <span class="relative z-10">Services</span>
+      <span class="absolute inset-0 bg-[#1b3a2d]/10 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="products.html" class="menu-link block py-3 px-4 rounded-lg hover:bg-[#1b3a2d] hover:text-white transition-all duration-300 relative overflow-hidden group">
+      <span class="relative z-10">Products</span>
+      <span class="absolute inset-0 bg-[#1b3a2d]/10 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="pricing.html" class="menu-link block py-3 px-4 rounded-lg hover:bg-[#1b3a2d] hover:text-white transition-all duration-300 relative overflow-hidden group">
+      <span class="relative z-10">Pricing</span>
+      <span class="absolute inset-0 bg-[#1b3a2d]/10 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="blog.html" class="menu-link block py-3 px-4 rounded-lg hover:bg-[#1b3a2d] hover:text-white transition-all duration-300 relative overflow-hidden group">
+      <span class="relative z-10">Blog</span>
+      <span class="absolute inset-0 bg-[#1b3a2d]/10 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="careers.html" class="menu-link block py-3 px-4 rounded-lg hover:bg-[#1b3a2d] hover:text-white transition-all duration-300 relative overflow-hidden group">
+      <span class="relative z-10">Careers</span>
+      <span class="absolute inset-0 bg-[#1b3a2d]/10 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="contact.html" class="menu-link block py-3 px-4 rounded-lg hover:bg-[#1b3a2d] hover:text-white transition-all duration-300 relative overflow-hidden group">
+      <span class="relative z-10">Contact</span>
+      <span class="absolute inset-0 bg-[#1b3a2d]/10 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+    </a>
+  </li>
+</ul>
+</div>
+
+<style>
+.menu-link.active {
+    background-color: rgba(27, 58, 45, 0.1);
+    color: #1b3a2d;
+}
+
+.menu-link.active:hover {
+    background-color: #1b3a2d;
+    color: white;
+}
+
+.menu-link.active span:last-child {
+    background-color: rgba(27, 58, 45, 0.2);
+    transform: scaleX(1);
+}
+</style>
