@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Legal Case Management - Capybarrister</title>
+    
+    <!-- Essential Meta Tags -->
+    <meta name="description" content="Streamline your legal practice with Capybarrister's intelligent case management system. Track cases, manage documents, and collaborate efficiently.">
+    <meta name="keywords" content="legal case management, legal software, case tracking, legal workflow, legal automation">
+    <meta name="author" content="Capybarrister">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://capybarrister.com/case-management">
+    <meta property="og:title" content="Smart Legal Case Management - Capybarrister">
+    <meta property="og:description" content="Streamline your legal practice with Capybarrister's intelligent case management system.">
+    <meta property="og:image" content="https://capybarrister.com/img/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://capybarrister.com/case-management">
+    <meta property="twitter:title" content="Smart Legal Case Management - Capybarrister">
+    <meta property="twitter:description" content="Streamline your legal practice with Capybarrister's intelligent case management system.">
+    <meta property="twitter:image" content="https://capybarrister.com/img/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="manifest" href="img/site.webmanifest">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-sans text-dark-green">
+    <!-- Navbar Container -->
+    <div id="navbar-container"></div>
+
+    <!-- Slide Menu Container -->
+    <div id="slide-menu-container"></div>
+
+    <!-- Menu Overlay -->
+    <div id="menuOverlay" class="menu-overlay fixed inset-0 bg-black/50 backdrop-blur-sm z-[90] hidden"></div>
+
+    <!-- Hero Section -->
+    <header class="hero bg-[#1b3a2d] text-white py-16 sm:py-24 md:py-32">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="text-center">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 sm:mb-6">Case Management</h1>
+                <p class="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto">
+                    Streamline your legal practice with our intelligent case management system. Track cases, manage documents, and collaborate seamlessly.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-12 sm:py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <!-- Dashboard Preview -->
+            <div class="mb-16">
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                    <img src="img/dashboard-preview.png" alt="Capybarrister Dashboard" class="w-full h-auto">
+                </div>
+            </div>
+
+            <!-- Key Features -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <h3 class="text-2xl font-semibold text-[#1b3a2d] mb-6">Core Features</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="w-8 h-8 bg-[#3b6f59] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-calendar-check text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-[#1b3a2d] mb-1">Smart Calendar</h4>
+                                <p class="text-earth-600">Automated deadline tracking and court date management</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-8 h-8 bg-[#3b6f59] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-file-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-[#1b3a2d] mb-1">Document Management</h4>
+                                <p class="text-earth-600">Centralized storage with version control and collaboration</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-8 h-8 bg-[#3b6f59] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-users text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-[#1b3a2d] mb-1">Team Collaboration</h4>
+                                <p class="text-earth-600">Real-time updates and secure communication channels</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <h3 class="text-2xl font-semibold text-[#1b3a2d] mb-6">AI-Powered Tools</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="w-8 h-8 bg-[#3b6f59] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-chart-line text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-[#1b3a2d] mb-1">Case Analytics</h4>
+                                <p class="text-earth-600">Predictive insights and performance metrics</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-8 h-8 bg-[#3b6f59] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-robot text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-[#1b3a2d] mb-1">AI Assistant</h4>
+                                <p class="text-earth-600">Smart document review and legal research support</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-8 h-8 bg-[#3b6f59] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-shield-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-[#1b3a2d] mb-1">Compliance Monitor</h4>
+                                <p class="text-earth-600">Automated regulatory compliance tracking</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Benefits Section -->
+            <div class="bg-[#1b3a2d] rounded-2xl p-12 text-white mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-center">Why Choose Capybarrister?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-clock text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Save Time</h3>
+                        <p class="text-white/80">Reduce administrative tasks by up to 40%</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-chart-pie text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Increase Efficiency</h3>
+                        <p class="text-white/80">Handle more cases with the same resources</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-user-shield text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Reduce Risk</h3>
+                        <p class="text-white/80">Never miss a deadline or important detail</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="text-center">
+                <h2 class="text-3xl font-bold mb-4">Ready to Transform Your Case Management?</h2>
+                <p class="text-lg text-earth-600 mb-8 max-w-2xl mx-auto">
+                    Join leading law firms and legal professionals who trust Capybarrister for their case management needs.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="/products" class="inline-block px-8 py-4 bg-[#3b6f59] text-white font-semibold rounded-full hover:bg-opacity-90 transition-all duration-300">
+                        Get Started
+                    </a>
+                    <a href="/contact" class="inline-block px-8 py-4 bg-white text-[#1b3a2d] font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 border border-[#1b3a2d]">
+                        Schedule Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="js/components.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Load components
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('components/navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-container').innerHTML = data;
+                });
+
+            fetch('components/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-container').innerHTML = data;
+                });
+        });
+    </script>
+</body>
+</html> 
